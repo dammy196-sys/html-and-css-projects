@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My One Page Website</title>
+    <meta charset="UTF-8">
+    <style>
+
+        /* GENERAL */
+        body {
+            font-family: Arial;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #1F5C99;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #1F5C99;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 50px 30px;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #1F5C99;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        /* PICTURES */
+        .pictures {
+            background-color: white;
+        }
+
+        .image-container {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .image-container img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 2px 2px 8px gray;
+        }
+
+        .image-container p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* CONTACT FORM */
+        .contact {
+            background-color: #f9f9f9;
+        }
+
+        form {
+            display: inline-block;
+            text-align: left;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 8px gray;
+            width: 400px;
+        }
+
+        form label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        form input[type="submit"] {
+            background-color: #1F5C99;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #333;
+        }
+
+        /* VIDEO */
+        .video {
+            background-color: white;
+        }
+
+        .video-container {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .video-container iframe {
+            width: 560px;
+            height: 315px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 8px gray;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #1F5C99;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#pictures">Pictures</a>
+        <a href="#contact">Contact</a>
+        <a href="#video">Video</a>
+        <a href="#footer">Footer</a>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section id="home">
+        <header>
+            <h1>Welcome to My Website</h1>
+            <p>This is my one page website built with HTML and CSS.</p>
+        </header>
+        <h2>About Us</h2>
+        <p>We are a professional pet grooming service based in Edmonton, AB.</p>
+        <p>Our experienced groomers will ensure that your pet looks and feels their best.</p>
+        <h3>Our Services Include:</h3>
+        <ul style="display: inline-block; text-align: left;">
+            <li>Bathing and Drying</li>
+            <li>Haircut and Styling</li>
+            <li>Nail Trimming</li>
+            <li>Ear Cleaning</li>
+            <li>Teeth Brushing</li>
+        </ul>
+    </section>
+
+    <!-- PICTURES SECTION -->
+    <section id="pictures" class="pictures">
+        <h2>Our Work</h2>
+        <p>Take a look at some of our happy furry clients!</p>
+
+        <div class="image-container">
+            <img src="dog_mini_malit.jpg" 
+            alt="A white Maltese dog getting a haircut by a professional groomer">
+            <p>Maltese Grooming</p>
+        </div>
+
+        <div class="image-container">
+            <img src="dog_yorkie.jpg" 
+            alt="A Yorkshire Terrier being groomed by a professional groomer">
+            <p>Yorkie Grooming</p>
+        </div>
+
+        <div class="image-container">
+            <img src="go.jpg" 
+            alt="A black and white dog surrounded by grooming tools">
+            <p>Full Grooming Service</p>
+        </div>
+
+    </section>
+
+    <!-- CONTACT FORM SECTION -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Have a question or want to book an appointment? Fill out the form below!</p>
+
+        <form>
+            <label>First Name:</label>
+            <input type="text" placeholder="Enter your first name">
+
+            <label>Last Name:</label>
+            <input type="text" placeholder="Enter your last name">
+
+            <label>Email:</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>Phone Number:</label>
+            <input type="tel" placeholder="Enter your phone number">
+
+            <label>Message:</label>
+            <textarea rows="5" placeholder="Enter your message here"></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <!-- VIDEO SECTION -->
+    <section id="video" class="video">
+        <h2>Watch Our Grooming Videos</h2>
+        <p>See how we pamper your pets!</p>
+
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/7o3AiRhEL5E" 
+                title="Pet Grooming Video"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <h3>Pet Grooming Services</h3>
+        <p>Edmonton, AB, Canada</p>
+        <p>Email: <a href="mailto:info@petgrooming.com">info@petgrooming.com</a></p>
+        <p>Phone: 780-123-4567</p>
+        <p>Copyright 2026 Pet Grooming Services. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
