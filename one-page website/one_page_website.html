@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>My One Page Website</title>
+    <title>Pet Grooming Services</title>
     <meta charset="UTF-8">
     <style>
 
@@ -20,7 +20,7 @@
             background-color: #1F5C99;
             color: white;
             text-align: center;
-            padding: 40px 20px;
+            padding: 60px 20px;
         }
 
         header h1 {
@@ -39,6 +39,7 @@
             padding: 15px;
             position: sticky;
             top: 0;
+            z-index: 100;
         }
 
         nav a {
@@ -54,7 +55,7 @@
 
         /* SECTIONS */
         section {
-            padding: 50px 30px;
+            padding: 60px 30px;
             text-align: center;
         }
 
@@ -142,20 +143,29 @@
             margin: 10px;
         }
 
-        
-        
+        .video-container iframe {
+            width: 560px;
+            height: 315px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 8px gray;
+            border: none;
+        }
 
         /* FOOTER */
         footer {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 30px;
         }
 
         footer a {
             color: #1F5C99;
             text-decoration: none;
+        }
+
+        footer p {
+            margin: 8px 0;
         }
 
     </style>
@@ -175,12 +185,12 @@
     <!-- HOME SECTION -->
     <section id="home">
         <header>
-            <h1>Welcome to My Website</h1>
-            <p>This is my one page website built with HTML and CSS.</p>
+            <h1>Welcome to Pet Grooming Services</h1>
+            <p>Professional grooming for your beloved pets in Edmonton, AB</p>
         </header>
         <h2>About Us</h2>
         <p>We are a professional pet grooming service based in Edmonton, AB.</p>
-        <p>Our experienced groomers will ensure that your pet looks and feels their best.</p>
+        <p>Our experienced groomers will ensure your pet looks and feels their best.</p>
         <h3>Our Services Include:</h3>
         <ul style="display: inline-block; text-align: left;">
             <li>Bathing and Drying</li>
@@ -197,19 +207,19 @@
         <p>Take a look at some of our happy furry clients!</p>
 
         <div class="image-container">
-            <img src="dog_mini_malit.jpg" 
+            <img src="dog_mini_malit.jpg"
             alt="A white Maltese dog getting a haircut by a professional groomer">
             <p>Maltese Grooming</p>
         </div>
 
         <div class="image-container">
-            <img src="dog_yorkie.jpg" 
+            <img src="dog_yorkie.jpg"
             alt="A Yorkshire Terrier being groomed by a professional groomer">
             <p>Yorkie Grooming</p>
         </div>
 
         <div class="image-container">
-            <img src="go.jpg" 
+            <img src="go.jpg"
             alt="A black and white dog surrounded by grooming tools">
             <p>Full Grooming Service</p>
         </div>
@@ -229,13 +239,14 @@
             <input type="text" placeholder="Enter your last name">
 
             <label>Email:</label>
-            <input type="email" placeholder="Enter your email">
+            <input type="email" placeholder="Enter your email address">
 
             <label>Phone Number:</label>
             <input type="tel" placeholder="Enter your phone number">
 
             <label>Message:</label>
-            <textarea rows="5" placeholder="Enter your message here"></textarea>
+            <textarea rows="5" 
+            placeholder="Enter your message here"></textarea>
 
             <input type="submit" value="Send Message">
         </form>
@@ -247,8 +258,8 @@
         <p>See how we pamper your pets!</p>
 
         <div class="video-container">
-            <iframe 
-                src="https://www.youtube.com/embed/7o3AiRhEL5E" 
+            <iframe
+                src="https://www.youtube.com/embed/7o3AiRhEL5E"
                 title="Pet Grooming Video"
                 allowfullscreen>
             </iframe>
@@ -260,9 +271,15 @@
     <footer id="footer">
         <h3>Pet Grooming Services</h3>
         <p>Edmonton, AB, Canada</p>
-        <p>Email: <a href="mailto:info@petgrooming.com">info@petgrooming.com</a></p>
+        <p>Email: 
+            <a href="mailto:info@petgrooming.com">
+                info@petgrooming.com
+            </a>
+        </p>
         <p>Phone: 780-123-4567</p>
-        <p>Copyright 2026 Pet Grooming Services. All Rights Reserved.</p>
+        <p>Opening Hours: Mon - Sat, 9am - 6pm</p>
+        <p>Copyright 2026 Pet Grooming Services. 
+        All Rights Reserved.</p>
     </footer>
 
 </body>
